@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uygulama1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="gokyuzu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKL-Sc-yUb">
+                                <rect key="frame" x="154" y="352" width="123" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="qpq-7d-mVP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2024-02-19 at 00.06.32" translatesAutoresizingMaskIntoConstraints="NO" id="VpG-WW-Ehh">
+                                <rect key="frame" x="30" y="109" width="370" height="186"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-fI-e5A">
+                                <rect key="frame" x="166" y="432" width="99" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="y4W-UB-A71"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="degistir"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLF-fQ-Ioq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WKL-Sc-yUb" firstAttribute="leading" secondItem="6Yk-fI-e5A" secondAttribute="leading" id="4di-Zl-aqW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Yk-fI-e5A" secondAttribute="bottom" constant="429" id="AG8-6T-V5g"/>
+                            <constraint firstItem="VpG-WW-Ehh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BFP-Lf-mZy"/>
+                            <constraint firstItem="VpG-WW-Ehh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="E82-pr-3dv"/>
+                            <constraint firstItem="VpG-WW-Ehh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JBb-9x-O0a"/>
+                            <constraint firstItem="6Yk-fI-e5A" firstAttribute="top" secondItem="WKL-Sc-yUb" secondAttribute="bottom" constant="52" id="Sqg-Tv-Gsc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Yk-fI-e5A" secondAttribute="trailing" constant="167" id="X2E-p3-9My"/>
+                            <constraint firstItem="WKL-Sc-yUb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="fci-Rd-QMo"/>
+                            <constraint firstItem="WKL-Sc-yUb" firstAttribute="top" secondItem="VpG-WW-Ehh" secondAttribute="bottom" constant="56" id="mmV-T0-ho5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WKL-Sc-yUb" secondAttribute="trailing" constant="143" id="pyK-8h-9Rc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="WKL-Sc-yUb" id="Ujp-y9-7SA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65.581395348837205" y="-2.5751072961373391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhatsApp Image 2024-02-19 at 00.06.32" width="735" height="490"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
